@@ -1,0 +1,1285 @@
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GoldWorth | More Than Gold</title>
+
+<style>
+
+:root {
+
+  --gold:#dfbb70;
+
+  --dark:#10100e;
+
+  --panel:#1b1a16;
+
+  --cream:#f8f3e9;
+
+  --muted:#c2bbad;
+
+}
+
+* {box-sizing:border-box}
+
+html {scroll-behavior:smooth}
+
+body {
+
+  margin:0;background:var(--dark);color:var(--cream);
+
+  font-family:Arial,sans-serif;line-height:1.6
+
+}
+
+a {color:inherit;text-decoration:none}
+
+.wrap {width:min(1120px,92%);margin:auto}
+
+header {
+
+  display:flex;align-items:center;justify-content:space-between;
+
+  padding:20px 0;border-bottom:1px solid #373329
+
+}
+
+.logo {font:28px Georgia,serif;color:var(--gold)}
+
+nav {display:flex;gap:20px;font-size:14px}
+
+.btn {
+
+  display:inline-block;background:var(--gold);color:#16130d;
+
+  padding:13px 20px;border:0;border-radius:4px;
+
+  font-weight:bold;cursor:pointer
+
+}
+
+.btn:hover {background:#f5d99b}
+
+.hero {
+
+  display:grid;grid-template-columns:1fr 1fr;
+
+  align-items:center;gap:38px;padding:65px 0
+
+}
+
+.eyebrow {
+
+  color:var(--gold);text-transform:uppercase;
+
+  letter-spacing:3px;font-size:12px;font-weight:bold
+
+}
+
+h1 {font:clamp(40px,5vw,67px)/1.05 Georgia,serif;margin:18px 0}
+
+h1 em {color:var(--gold);font-weight:normal}
+
+p {color:var(--muted)}
+
+.hero img {width:100%;height:450px;object-fit:cover;border-radius:7px}
+
+.actions {display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}
+
+.outline {border:1px solid var(--gold);padding:12px 18px;border-radius:4px}
+
+.prices {background:#1b1a15;padding:25px 0;border-block:1px solid #393326}
+
+.price-grid,.cards,.steps {
+
+  display:grid;grid-template-columns:repeat(4,1fr);gap:15px
+
+}
+
+.price {border-left:2px solid var(--gold);padding:8px 15px}
+
+.price strong {display:block;color:var(--gold);font-size:21px}
+
+.price small {color:var(--muted)}
+
+section {padding:65px 0}
+
+.heading {text-align:center;max-width:750px;margin:0 auto 35px}
+
+h2 {font:clamp(30px,4vw,43px)/1.15 Georgia,serif;margin:12px 0}
+
+.cards {grid-template-columns:repeat(3,1fr)}
+
+.card {background:var(--panel);border:1px solid #383329;border-radius:6px;overflow:hidden}
+
+.card img {width:100%;height:225px;object-fit:cover}
+
+.card-content {padding:20px}
+
+.card h3 {font:23px Georgia,serif;color:var(--gold)}
+
+.split {display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+
+.split img {width:100%;height:390px;object-fit:cover;border-radius:6px}
+
+li {margin:12px 0;color:#ddd5c7}
+
+li::marker {color:var(--gold)}
+
+.dark-section {background:#19170f;border-block:1px solid #403621}
+
+.steps {grid-template-columns:repeat(3,1fr)}
+
+.step {border:1px solid #423a2a;padding:23px;border-radius:6px}
+
+.number {font:40px Georgia,serif;color:var(--gold)}
+
+.couriers {display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+.courier {border:1px solid var(--gold);padding:12px 24px;color:var(--gold);font-weight:bold}
+
+.review {max-width:780px;margin:auto;text-align:center;background:var(--panel);padding:35px;border:1px solid #413829;border-radius:8px}
+
+.stars {color:var(--gold);letter-spacing:4px}
+
+.quote {font:24px Georgia,serif}
+
+.review button {margin:12px 5px;background:transparent;color:var(--gold);border:1px solid var(--gold);padding:8px 15px;cursor:pointer}
+
+.faq {max-width:800px;margin:auto}
+
+details {padding:17px 0;border-bottom:1px solid #373329}
+
+summary {cursor:pointer;color:var(--gold);font-weight:bold}
+
+form {max-width:650px;margin:auto;background:var(--panel);padding:25px;border-radius:7px}
+
+label {display:block;margin:13px 0 5px}
+
+input,select,textarea {
+
+  width:100%;padding:12px;background:#10100e;color:white;
+
+  border:1px solid #514630;border-radius:4px;font:inherit
+
+}
+
+textarea {min-height:100px}
+
+footer {padding:30px 0;border-top:1px solid #393329;font-size:13px}
+
+.note {font-size:12px;color:#a69d8d}
+
+#message {color:var(--gold);margin-top:15px}
+
+@media(max-width:760px) {
+
+  nav {display:none}
+
+  .hero,.split {grid-template-columns:1fr}
+
+  .hero {padding:40px 0}
+
+  .hero img {height:330px}
+
+  .price-grid {grid-template-columns:repeat(2,1fr)}
+
+  .cards,.steps {grid-template-columns:1fr}
+
+  section {padding:45px 0}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div style="text-align:center;background:#302617;color:#f0d59a;padding:9px;font-size:12px">
+
+  SOUTH AFRICAN GOLD BUYERS · JEWELLERY · DIAMONDS · LUXURY ITEMS
+
+</div>
+
+
+
+<header class="wrap">
+
+  <a class="logo" href="#">GOLDWORTH.</a>
+
+  <nav>
+
+    <a href="#why">Why us</a>
+
+    <a href="#prices">Gold prices</a>
+
+    <a href="#reviews">Reviews</a>
+
+    <a href="#contact">Contact</a>
+
+  </nav>
+
+  <a class="btn" href="#contact">Get valued</a>
+
+</header>
+
+
+
+<main>
+
+<section class="wrap hero">
+
+  <div>
+
+    <div class="eyebrow">More than gold. More than weight.</div>
+
+    <h1>Your jewellery could be worth <em>so much more.</em></h1>
+
+    <p>We don't just weigh your gold and melt it down. We look at the whole piece — from its precious metals and diamonds to its designer name, craftsmanship and history.</p>
+
+    <div class="actions">
+
+      <a class="btn" href="#contact">DISCOVER YOUR VALUE ↗</a>
+
+      <a class="outline" href="#why">Why GoldWorth?</a>
+
+    </div>
+
+    <p>✓ Personalised assessments<br>
+
+       ✓ Diamonds and gemstones considered<br>
+
+       ✓ Designer and collectible jewellery recognised</p>
+
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1100&q=85" alt="Beautiful luxury gold jewellery">
+
+</section>
+
+
+
+<section class="prices" id="prices">
+
+  <div class="wrap">
+
+    <div class="eyebrow">Gold market calculator</div>
+
+    <h2>Indicative gold value per gram</h2>
+
+    <p>Enter a gold spot price in rand per gram to estimate the metal value at different purities.</p>
+
+    <label for="spot">Demo spot price (ZAR per gram)</label>
+
+    <input id="spot" type="number" value="1800" min="0" step="0.01" style="max-width:250px">
+
+    <button class="btn" onclick="updateGold()">Calculate</button>
+
+    <div class="price-grid" style="margin-top:25px">
+
+      <div class="price"><small>24K · Fine gold</small><strong id="k24">R 1,800.00</strong></div>
+
+      <div class="price"><small>22K · 91.6%</small><strong id="k22">R 1,648.80</strong></div>
+
+      <div class="price"><small>18K · 75%</small><strong id="k18">R 1,350.00</strong></div>
+
+      <div class="price"><small>14K · 58.5%</small><strong id="k14">R 1,053.00</strong></div>
+
+    </div>
+
+    <p class="note">Important: R1,800 is a placeholder for testing, not a live gold price. These calculations estimate metal value only, not a guaranteed buying offer. A live price feed must be connected before launch.</p>
+
+  </div>
+
+</section>
+
+
+
+<section class="wrap" id="why">
+
+  <div class="heading">
+
+    <div class="eyebrow">The GoldWorth difference</div>
+
+    <h2>We see the value others might overlook.</h2>
+
+    <p>Your item could have value beyond its gold content. We consider each piece individually.</p>
+
+  </div>
+
+  <div class="cards">
+
+    <article class="card">
+
+      <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80" alt="Gold ring">
+
+      <div class="card-content">
+
+        <h3>Gold that gets valued properly</h3>
+
+        <p>We consider purity, weight and market price when assessing the precious metal in your jewellery.</p>
+
+      </div>
+
+    </article>
+
+    <article class="card">
+
+      <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80" alt="Luxury jewellery">
+
+      <div class="card-content">
+
+        <h3>Designer names matter</h3>
+
+        <p>Luxury brands, sought-after designs and collectible pieces may command a premium beyond their metal value.</p>
+
+      </div>
+
+    </article>
+
+    <article class="card">
+
+      <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80" alt="Diamond necklace">
+
+      <div class="card-content">
+
+        <h3>Diamonds & gemstones count</h3>
+
+        <p>We consider eligible diamonds and gemstones based on their characteristics, authenticity and resale potential.</p>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+
+<section class="dark-section">
+
+  <div class="wrap split">
+
+    <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=85" alt="Fine jewellery carefully arranged">
+
+    <div>
+
+      <div class="eyebrow">More than scrap</div>
+
+      <h2>Some pieces deserve to be preserved.</h2>
+
+      <p>Not every valuable item belongs in a melting pot. Designer jewellery, antique pieces and historically interesting items may have a second life with someone who appreciates them.</p>
+
+      <ul>
+
+        <li>We look beyond gold weight alone.</li>
+
+        <li>We consider brand, craftsmanship and rarity.</li>
+
+        <li>We take gemstones and diamonds into account.</li>
+
+        <li>Where appropriate, we consider preservation and resale potential.</li>
+
+      </ul>
+
+      <a class="btn" href="#contact">ASK FOR A FULL VALUATION</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="wrap">
+
+  <div class="heading">
+
+    <div class="eyebrow">Simple and straightforward</div>
+
+    <h2>How it works</h2>
+
+  </div>
+
+  <div class="steps">
+
+    <div class="step"><div class="number">01</div><h3>Tell us about it</h3><p>Share the type of item, brand, hallmarks and any stones you know about.</p></div>
+
+    <div class="step"><div class="number">02</div><h3>We assess the piece</h3><p>We consider the gold, gemstones, brand, condition and potential resale value.</p></div>
+
+    <div class="step"><div class="number">03</div><h3>Review your offer</h3><p>Ask questions, understand the offer and decide whether to proceed.</p></div>
+
+  </div>
+
+  <div style="text-align:center;margin-top:35px">
+
+    <div class="eyebrow">Courier options</div>
+
+    <h2 style="font-size:28px">Convenience from wherever you are</h2>
+
+    <div class="couriers"><span class="courier">PUDO</span><span class="courier">ARAMEX</span><span class="courier">COURIER COLLECTION</span></div>
+
+    <p class="note">Courier services are subject to confirmation. Always verify shipping instructions, tracking, insurance and packaging with the business before sending valuables.</p>
+
+  </div>
+
+</section>
+
+
+
+<section class="dark-section" id="reviews">
+
+  <div class="wrap">
+
+    <div class="heading">
+
+      <div class="eyebrow">Customer experiences</div>
+
+      <h2>Trust starts with transparency.</h2>
+
+    </div>
+
+    <div class="review">
+
+      <div class="stars">★★★★★</div>
+
+      <div class="quote" id="quote">“The team explained how the gold and the design were considered. I felt informed, not rushed.”</div>
+
+      <p id="author">Demo testimonial — replace before launch</p>
+
+      <button onclick="changeReview(-1)">← Previous</button>
+
+      <button onclick="changeReview(1)">Next →</button>
+
+      <p class="note">These are demonstration reviews, not verified customer testimonials. Replace them with genuine reviews before publishing.</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="wrap" id="faq">
+
+  <div class="heading"><div class="eyebrow">Frequently asked questions</div><h2>Good to know</h2></div>
+
+  <div style="max-width:800px;margin:auto">
+
+    <details><summary>Do you pay more than the gold price?</summary><p>Depending on the item, an offer may include value beyond the metal content, such as brand, gemstones, condition, craftsmanship and resale demand. Any premium is subject to assessment.</p></details>
+
+    <details><summary>Do you pay for diamonds?</summary><p>Eligible diamonds and gemstones are considered according to their characteristics, authenticity and resale potential.</p></details>
+
+    <details><summary>Do you melt every item?</summary><p>No promise should be made without assessing the piece. Items with potential designer, antique or collectible value may be considered for resale or preservation where appropriate.</p></details>
+
+    <details><summary>Is the gold calculator a live price?</summary><p>No. This prototype uses a demo rate that you can edit. A live data provider must be connected for real-time pricing.</p></details>
+
+  </div>
+
+</section>
+
+
+
+<section class="dark-section" id="contact">
+
+  <div class="wrap">
+
+    <div class="heading">
+
+      <div class="eyebrow">Start a conversation</div>
+
+      <h2>Find out what your jewellery may be worth.</h2>
+
+      <p>Complete the demo form to test how it works.</p>
+
+    </div>
+
+    <form id="form">
+
+      <label for="name">Your name</label>
+
+      <input id="name" required placeholder="Enter your name">
+
+      <label for="contactDetails">Phone or email</label>
+
+      <input id="contactDetails" required placeholder="Your preferred contact details">
+
+      <label for="item">What would you like valued?</label>
+
+      <select id="item" required>
+
+        <option value="">Choose an item</option>
+
+        <option>Gold jewellery</option>
+
+        <option>Diamond jewellery</option>
+
+        <option>Designer or luxury jewellery</option>
+
+        <option>Watch</option>
+
+        <option>Antique or collectible piece</option>
+
+        <option>Other</option>
+
+      </select>
+
+      <label for="details">Additional details</label>
+
+      <textarea id="details" placeholder="Brand, karat, stones, condition or questions"></textarea>
+
+      <button class="btn" style="width:100%;margin-top:18px">TEST ENQUIRY FORM</button>
+
+      <p id="message"></p>
+
+      <p class="note">Demo only: this form does not send or store your details. A secure form service must be connected to receive enquiries.</p>
+
+    </form>
+
+  </div>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+  <div class="wrap">
+
+    <div class="logo">GOLDWORTH.</div>
+
+    <p>More Than Gold · Gold · Diamonds · Designer Jewellery</p>
+
+    <p class="note">Before launch, add your real contact details, business registration information, privacy policy, terms and verified customer testimonials. Do not claim the highest prices in South Africa unless you can substantiate it.</p>
+
+    © <span id="year"></span> GoldWorth — Website prototype.
+
+  </div>
+
+</footer>
+
+
+
+<script>
+
+function updateGold() {
+
+  const spot = Math.max(0, Number(document.getElementById('spot').value) || 0);
+
+  const fmt = value => value.toLocaleString('en-ZA', {
+
+    style:'currency', currency:'ZAR', minimumFractionDigits:2
+
+  });
+
+  document.getElementById('k24').textContent = fmt(spot);
+
+  document.getElementById('k22').textContent = fmt(spot * 0.916);
+
+  document.getElementById('k18').textContent = fmt(spot * 0.75);
+
+  document.getElementById('k14').textContent = fmt(spot * 0.585);
+
+}
+
+const reviews = [
+
+  ['“The team explained how the gold and the design were considered. I felt informed, not rushed.”','Demo testimonial — replace before launch'],
+
+  ['“I was glad the stones and the brand were part of the conversation, not only the weight.”','Demo testimonial — replace before launch'],
+
+  ['“The process was clear and I could ask questions before making a decision.”','Demo testimonial — replace before launch']
+
+];
+
+let reviewIndex = 0;
+
+function changeReview(direction) {
+
+  reviewIndex = (reviewIndex + direction + reviews.length) % reviews.length;
+
+  document.getElementById('quote').textContent = reviews[reviewIndex][0];
+
+  document.getElementById('author').textContent = reviews[reviewIndex][1];
+
+}
+
+document.getElementById('form').addEventListener('submit', function(event) {
+
+  event.preventDefault();
+
+  document.getElementById('message').textContent =
+
+    'Preview successful! No information was sent. Connect a secure form service to receive real enquiries.';
+
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+updateGold();
+
+</script>
+
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GoldWorth | More Than Gold</title>
+
+<style>
+
+:root {
+
+  --gold:#dfbb70;
+
+  --dark:#10100e;
+
+  --panel:#1b1a16;
+
+  --cream:#f8f3e9;
+
+  --muted:#c2bbad;
+
+}
+
+* {box-sizing:border-box}
+
+html {scroll-behavior:smooth}
+
+body {
+
+  margin:0;background:var(--dark);color:var(--cream);
+
+  font-family:Arial,sans-serif;line-height:1.6
+
+}
+
+a {color:inherit;text-decoration:none}
+
+.wrap {width:min(1120px,92%);margin:auto}
+
+header {
+
+  display:flex;align-items:center;justify-content:space-between;
+
+  padding:20px 0;border-bottom:1px solid #373329
+
+}
+
+.logo {font:28px Georgia,serif;color:var(--gold)}
+
+nav {display:flex;gap:20px;font-size:14px}
+
+.btn {
+
+  display:inline-block;background:var(--gold);color:#16130d;
+
+  padding:13px 20px;border:0;border-radius:4px;
+
+  font-weight:bold;cursor:pointer
+
+}
+
+.btn:hover {background:#f5d99b}
+
+.hero {
+
+  display:grid;grid-template-columns:1fr 1fr;
+
+  align-items:center;gap:38px;padding:65px 0
+
+}
+
+.eyebrow {
+
+  color:var(--gold);text-transform:uppercase;
+
+  letter-spacing:3px;font-size:12px;font-weight:bold
+
+}
+
+h1 {font:clamp(40px,5vw,67px)/1.05 Georgia,serif;margin:18px 0}
+
+h1 em {color:var(--gold);font-weight:normal}
+
+p {color:var(--muted)}
+
+.hero img {width:100%;height:450px;object-fit:cover;border-radius:7px}
+
+.actions {display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}
+
+.outline {border:1px solid var(--gold);padding:12px 18px;border-radius:4px}
+
+.prices {background:#1b1a15;padding:25px 0;border-block:1px solid #393326}
+
+.price-grid,.cards,.steps {
+
+  display:grid;grid-template-columns:repeat(4,1fr);gap:15px
+
+}
+
+.price {border-left:2px solid var(--gold);padding:8px 15px}
+
+.price strong {display:block;color:var(--gold);font-size:21px}
+
+.price small {color:var(--muted)}
+
+section {padding:65px 0}
+
+.heading {text-align:center;max-width:750px;margin:0 auto 35px}
+
+h2 {font:clamp(30px,4vw,43px)/1.15 Georgia,serif;margin:12px 0}
+
+.cards {grid-template-columns:repeat(3,1fr)}
+
+.card {background:var(--panel);border:1px solid #383329;border-radius:6px;overflow:hidden}
+
+.card img {width:100%;height:225px;object-fit:cover}
+
+.card-content {padding:20px}
+
+.card h3 {font:23px Georgia,serif;color:var(--gold)}
+
+.split {display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+
+.split img {width:100%;height:390px;object-fit:cover;border-radius:6px}
+
+li {margin:12px 0;color:#ddd5c7}
+
+li::marker {color:var(--gold)}
+
+.dark-section {background:#19170f;border-block:1px solid #403621}
+
+.steps {grid-template-columns:repeat(3,1fr)}
+
+.step {border:1px solid #423a2a;padding:23px;border-radius:6px}
+
+.number {font:40px Georgia,serif;color:var(--gold)}
+
+.couriers {display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+.courier {border:1px solid var(--gold);padding:12px 24px;color:var(--gold);font-weight:bold}
+
+.review {max-width:780px;margin:auto;text-align:center;background:var(--panel);padding:35px;border:1px solid #413829;border-radius:8px}
+
+.stars {color:var(--gold);letter-spacing:4px}
+
+.quote {font:24px Georgia,serif}
+
+.review button {margin:12px 5px;background:transparent;color:var(--gold);border:1px solid var(--gold);padding:8px 15px;cursor:pointer}
+
+.faq {max-width:800px;margin:auto}
+
+details {padding:17px 0;border-bottom:1px solid #373329}
+
+summary {cursor:pointer;color:var(--gold);font-weight:bold}
+
+form {max-width:650px;margin:auto;background:var(--panel);padding:25px;border-radius:7px}
+
+label {display:block;margin:13px 0 5px}
+
+input,select,textarea {
+
+  width:100%;padding:12px;background:#10100e;color:white;
+
+  border:1px solid #514630;border-radius:4px;font:inherit
+
+}
+
+textarea {min-height:100px}
+
+footer {padding:30px 0;border-top:1px solid #393329;font-size:13px}
+
+.note {font-size:12px;color:#a69d8d}
+
+#message {color:var(--gold);margin-top:15px}
+
+@media(max-width:760px) {
+
+  nav {display:none}
+
+  .hero,.split {grid-template-columns:1fr}
+
+  .hero {padding:40px 0}
+
+  .hero img {height:330px}
+
+  .price-grid {grid-template-columns:repeat(2,1fr)}
+
+  .cards,.steps {grid-template-columns:1fr}
+
+  section {padding:45px 0}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div style="text-align:center;background:#302617;color:#f0d59a;padding:9px;font-size:12px">
+
+  SOUTH AFRICAN GOLD BUYERS · JEWELLERY · DIAMONDS · LUXURY ITEMS
+
+</div>
+
+
+
+<header class="wrap">
+
+  <a class="logo" href="#">GOLDWORTH.</a>
+
+  <nav>
+
+    <a href="#why">Why us</a>
+
+    <a href="#prices">Gold prices</a>
+
+    <a href="#reviews">Reviews</a>
+
+    <a href="#contact">Contact</a>
+
+  </nav>
+
+  <a class="btn" href="#contact">Get valued</a>
+
+</header>
+
+
+
+<main>
+
+<section class="wrap hero">
+
+  <div>
+
+    <div class="eyebrow">More than gold. More than weight.</div>
+
+    <h1>Your jewellery could be worth <em>so much more.</em></h1>
+
+    <p>We don't just weigh your gold and melt it down. We look at the whole piece — from its precious metals and diamonds to its designer name, craftsmanship and history.</p>
+
+    <div class="actions">
+
+      <a class="btn" href="#contact">DISCOVER YOUR VALUE ↗</a>
+
+      <a class="outline" href="#why">Why GoldWorth?</a>
+
+    </div>
+
+    <p>✓ Personalised assessments<br>
+
+       ✓ Diamonds and gemstones considered<br>
+
+       ✓ Designer and collectible jewellery recognised</p>
+
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1100&q=85" alt="Beautiful luxury gold jewellery">
+
+</section>
+
+
+
+<section class="prices" id="prices">
+
+  <div class="wrap">
+
+    <div class="eyebrow">Gold market calculator</div>
+
+    <h2>Indicative gold value per gram</h2>
+
+    <p>Enter a gold spot price in rand per gram to estimate the metal value at different purities.</p>
+
+    <label for="spot">Demo spot price (ZAR per gram)</label>
+
+    <input id="spot" type="number" value="1800" min="0" step="0.01" style="max-width:250px">
+
+    <button class="btn" onclick="updateGold()">Calculate</button>
+
+    <div class="price-grid" style="margin-top:25px">
+
+      <div class="price"><small>24K · Fine gold</small><strong id="k24">R 1,800.00</strong></div>
+
+      <div class="price"><small>22K · 91.6%</small><strong id="k22">R 1,648.80</strong></div>
+
+      <div class="price"><small>18K · 75%</small><strong id="k18">R 1,350.00</strong></div>
+
+      <div class="price"><small>14K · 58.5%</small><strong id="k14">R 1,053.00</strong></div>
+
+    </div>
+
+    <p class="note">Important: R1,800 is a placeholder for testing, not a live gold price. These calculations estimate metal value only, not a guaranteed buying offer. A live price feed must be connected before launch.</p>
+
+  </div>
+
+</section>
+
+
+
+<section class="wrap" id="why">
+
+  <div class="heading">
+
+    <div class="eyebrow">The GoldWorth difference</div>
+
+    <h2>We see the value others might overlook.</h2>
+
+    <p>Your item could have value beyond its gold content. We consider each piece individually.</p>
+
+  </div>
+
+  <div class="cards">
+
+    <article class="card">
+
+      <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80" alt="Gold ring">
+
+      <div class="card-content">
+
+        <h3>Gold that gets valued properly</h3>
+
+        <p>We consider purity, weight and market price when assessing the precious metal in your jewellery.</p>
+
+      </div>
+
+    </article>
+
+    <article class="card">
+
+      <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80" alt="Luxury jewellery">
+
+      <div class="card-content">
+
+        <h3>Designer names matter</h3>
+
+        <p>Luxury brands, sought-after designs and collectible pieces may command a premium beyond their metal value.</p>
+
+      </div>
+
+    </article>
+
+    <article class="card">
+
+      <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80" alt="Diamond necklace">
+
+      <div class="card-content">
+
+        <h3>Diamonds & gemstones count</h3>
+
+        <p>We consider eligible diamonds and gemstones based on their characteristics, authenticity and resale potential.</p>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+
+<section class="dark-section">
+
+  <div class="wrap split">
+
+    <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=85" alt="Fine jewellery carefully arranged">
+
+    <div>
+
+      <div class="eyebrow">More than scrap</div>
+
+      <h2>Some pieces deserve to be preserved.</h2>
+
+      <p>Not every valuable item belongs in a melting pot. Designer jewellery, antique pieces and historically interesting items may have a second life with someone who appreciates them.</p>
+
+      <ul>
+
+        <li>We look beyond gold weight alone.</li>
+
+        <li>We consider brand, craftsmanship and rarity.</li>
+
+        <li>We take gemstones and diamonds into account.</li>
+
+        <li>Where appropriate, we consider preservation and resale potential.</li>
+
+      </ul>
+
+      <a class="btn" href="#contact">ASK FOR A FULL VALUATION</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="wrap">
+
+  <div class="heading">
+
+    <div class="eyebrow">Simple and straightforward</div>
+
+    <h2>How it works</h2>
+
+  </div>
+
+  <div class="steps">
+
+    <div class="step"><div class="number">01</div><h3>Tell us about it</h3><p>Share the type of item, brand, hallmarks and any stones you know about.</p></div>
+
+    <div class="step"><div class="number">02</div><h3>We assess the piece</h3><p>We consider the gold, gemstones, brand, condition and potential resale value.</p></div>
+
+    <div class="step"><div class="number">03</div><h3>Review your offer</h3><p>Ask questions, understand the offer and decide whether to proceed.</p></div>
+
+  </div>
+
+  <div style="text-align:center;margin-top:35px">
+
+    <div class="eyebrow">Courier options</div>
+
+    <h2 style="font-size:28px">Convenience from wherever you are</h2>
+
+    <div class="couriers"><span class="courier">PUDO</span><span class="courier">ARAMEX</span><span class="courier">COURIER COLLECTION</span></div>
+
+    <p class="note">Courier services are subject to confirmation. Always verify shipping instructions, tracking, insurance and packaging with the business before sending valuables.</p>
+
+  </div>
+
+</section>
+
+
+
+<section class="dark-section" id="reviews">
+
+  <div class="wrap">
+
+    <div class="heading">
+
+      <div class="eyebrow">Customer experiences</div>
+
+      <h2>Trust starts with transparency.</h2>
+
+    </div>
+
+    <div class="review">
+
+      <div class="stars">★★★★★</div>
+
+      <div class="quote" id="quote">“The team explained how the gold and the design were considered. I felt informed, not rushed.”</div>
+
+      <p id="author">Demo testimonial — replace before launch</p>
+
+      <button onclick="changeReview(-1)">← Previous</button>
+
+      <button onclick="changeReview(1)">Next →</button>
+
+      <p class="note">These are demonstration reviews, not verified customer testimonials. Replace them with genuine reviews before publishing.</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="wrap" id="faq">
+
+  <div class="heading"><div class="eyebrow">Frequently asked questions</div><h2>Good to know</h2></div>
+
+  <div style="max-width:800px;margin:auto">
+
+    <details><summary>Do you pay more than the gold price?</summary><p>Depending on the item, an offer may include value beyond the metal content, such as brand, gemstones, condition, craftsmanship and resale demand. Any premium is subject to assessment.</p></details>
+
+    <details><summary>Do you pay for diamonds?</summary><p>Eligible diamonds and gemstones are considered according to their characteristics, authenticity and resale potential.</p></details>
+
+    <details><summary>Do you melt every item?</summary><p>No promise should be made without assessing the piece. Items with potential designer, antique or collectible value may be considered for resale or preservation where appropriate.</p></details>
+
+    <details><summary>Is the gold calculator a live price?</summary><p>No. This prototype uses a demo rate that you can edit. A live data provider must be connected for real-time pricing.</p></details>
+
+  </div>
+
+</section>
+
+
+
+<section class="dark-section" id="contact">
+
+  <div class="wrap">
+
+    <div class="heading">
+
+      <div class="eyebrow">Start a conversation</div>
+
+      <h2>Find out what your jewellery may be worth.</h2>
+
+      <p>Complete the demo form to test how it works.</p>
+
+    </div>
+
+    <form id="form">
+
+      <label for="name">Your name</label>
+
+      <input id="name" required placeholder="Enter your name">
+
+      <label for="contactDetails">Phone or email</label>
+
+      <input id="contactDetails" required placeholder="Your preferred contact details">
+
+      <label for="item">What would you like valued?</label>
+
+      <select id="item" required>
+
+        <option value="">Choose an item</option>
+
+        <option>Gold jewellery</option>
+
+        <option>Diamond jewellery</option>
+
+        <option>Designer or luxury jewellery</option>
+
+        <option>Watch</option>
+
+        <option>Antique or collectible piece</option>
+
+        <option>Other</option>
+
+      </select>
+
+      <label for="details">Additional details</label>
+
+      <textarea id="details" placeholder="Brand, karat, stones, condition or questions"></textarea>
+
+      <button class="btn" style="width:100%;margin-top:18px">TEST ENQUIRY FORM</button>
+
+      <p id="message"></p>
+
+      <p class="note">Demo only: this form does not send or store your details. A secure form service must be connected to receive enquiries.</p>
+
+    </form>
+
+  </div>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+  <div class="wrap">
+
+    <div class="logo">GOLDWORTH.</div>
+
+    <p>More Than Gold · Gold · Diamonds · Designer Jewellery</p>
+
+    <p class="note">Before launch, add your real contact details, business registration information, privacy policy, terms and verified customer testimonials. Do not claim the highest prices in South Africa unless you can substantiate it.</p>
+
+    © <span id="year"></span> GoldWorth — Website prototype.
+
+  </div>
+
+</footer>
+
+
+
+<script>
+
+function updateGold() {
+
+  const spot = Math.max(0, Number(document.getElementById('spot').value) || 0);
+
+  const fmt = value => value.toLocaleString('en-ZA', {
+
+    style:'currency', currency:'ZAR', minimumFractionDigits:2
+
+  });
+
+  document.getElementById('k24').textContent = fmt(spot);
+
+  document.getElementById('k22').textContent = fmt(spot * 0.916);
+
+  document.getElementById('k18').textContent = fmt(spot * 0.75);
+
+  document.getElementById('k14').textContent = fmt(spot * 0.585);
+
+}
+
+const reviews = [
+
+  ['“The team explained how the gold and the design were considered. I felt informed, not rushed.”','Demo testimonial — replace before launch'],
+
+  ['“I was glad the stones and the brand were part of the conversation, not only the weight.”','Demo testimonial — replace before launch'],
+
+  ['“The process was clear and I could ask questions before making a decision.”','Demo testimonial — replace before launch']
+
+];
+
+let reviewIndex = 0;
+
+function changeReview(direction) {
+
+  reviewIndex = (reviewIndex + direction + reviews.length) % reviews.length;
+
+  document.getElementById('quote').textContent = reviews[reviewIndex][0];
+
+  document.getElementById('author').textContent = reviews[reviewIndex][1];
+
+}
+
+document.getElementById('form').addEventListener('submit', function(event) {
+
+  event.preventDefault();
+
+  document.getElementById('message').textContent =
+
+    'Preview successful! No information was sent. Connect a secure form service to receive real enquiries.';
+
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+updateGold();
+
+</script>
+
+</body>
+
+</html>
+
