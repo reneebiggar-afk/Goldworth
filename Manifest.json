@@ -1,0 +1,11 @@
+{
+"name": "GoldWorth Gold Buyers",
+"short_name": "GoldWorth",
+"description": "GoldWorth buys gold jewellery, scrap gold, broken jewellery and unwanted gold across South Africa. Get a competitive offer with convenient courier options.",
+"start_url": "./",
+"scope": "./",
+"display": "standalone",
+"background_color": "#111111",
+"theme_color": "#D4AF37",
+"orientation": "portrait"
+}
