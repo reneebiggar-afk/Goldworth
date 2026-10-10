@@ -1,0 +1,19 @@
+{
+  "name": "GitHub File Entry App",
+  "url": "https://example.com",
+  "hook_attributes": {
+    "url": "https://example.com/github/events"
+  },
+  "redirect_url": "https://example.com/redirect",
+  "callback_urls": [
+    "https://example.com/callback"
+  ],
+  "public": true,
+  "default_permissions": {
+    "contents": "write",
+    "metadata": "read"
+  },
+  "default_events": [
+    "push"
+  ]
+}
